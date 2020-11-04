@@ -12,9 +12,7 @@ function generateGrid(pixles)
     }
     // First event: hovering on grids, colors change from white to black
     document.querySelectorAll(".grid-item").forEach(item => {
-        item.addEventListener("mouseover", event => {
-            item.style.backgroundColor = "black";
-        })
+        item.addEventListener('mouseover', () => { item.style.backgroundColor = 'black'; });
     })
 }
 generateGrid(16);
