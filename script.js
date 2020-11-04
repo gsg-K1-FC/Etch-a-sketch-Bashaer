@@ -1,7 +1,5 @@
 //append divs to the main div in html
 let container = document.getElementById("container");
-
-
 // create main 16*16 div
 function generateGrid(pixles)
 { 
@@ -18,6 +16,5 @@ function generateGrid(pixles)
             item.style.backgroundColor = "black";
         })
     })
-  
 }
 generateGrid(16);
