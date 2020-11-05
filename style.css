@@ -6,32 +6,79 @@
 body {
     background-color: #008080;
 }
+/* organizing the main structure */
 header {
 position: relative;
 display: flex;
 justify-content: space-around;
 background-color: rgb(255,182,193);
-height: 10vh
+height: 15vh;
 }
 .logo {
     font-size: 27px;
-    font-family: 'Grandstander', cursive;   
+    font-family: 'Grandstander', cursive; 
+    padding: 28px;  
+    margin-left: 220px;
+    
 }
 .menu {
-    font-size: 29px;
-    color:black;
+    font-size: 45px;
+    padding:25px;
+}
+span {
+    font-size:35px;
+    font-family: 'Grandstander', cursive;
+    margin-right: 100px;
 }
 .grid-item {
     background-color: #ffffff;
 }
 #container {
     display: grid;
-    margin: auto;
-    margin-top: 12px;
+    margin-top: 20px;
     border: 10px solid rgb(255,182,193);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    width: 500px;
+    width: 600px;
     height: 550px;
+}
+.wrapper{
+    display:flex;
+    justify-content: space-around;
+     margin-left: 200px
+}
+/* buttons  */
+.reset-btn {
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    width: 200px;
+    height:80px;
+}
+.grid-btn {
+    border: none;
+    border-radius: 30px;
+    width:200px;
+    height:80px;
+    outline:none;
+}
+.grid-btn h1 {
+    font-family:'Grandstander', cursive;  ;
+}
+.reset-btn h1 {
+    font-family : 'Grandstander', cursive; 
+    
+}
+.reset-btn:hover
+  {
+    background-color: rgb(255,192,203) ;
+    border: 2px solid red;
+}
+.grid-btn:hover {
+    border : 4px solid  yellowgreen ;
+    background-color: rgb(255,192,203);
+}
+.buttons {
+    padding: 20px;
 }
 

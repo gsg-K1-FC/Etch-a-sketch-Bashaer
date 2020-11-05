@@ -16,3 +16,27 @@ function generateGrid(pixles)
     })
 }
 generateGrid(16);
+//reset button
+function clearGrid() {
+    document.querySelectorAll('.grid-item').forEach(item => item.style = '')
+  };
+  document.querySelector(".reset-btn").addEventListener('click', clearGrid);
+
+// New grid button
+document.querySelector(".grid-btn").addEventListener("click",newGrid)
+function newGrid() {
+       
+        let differentGridSize = prompt("Enter a new grid size(1-100):");
+        if (differentGridSize >= 1 && differentGridSize <= 100) {
+            generateGrid(differentGridSize);
+            clearGrid(differentGridSize)
+        } else {
+        alert("please enter a size  within 1-100 pixles")  
+        }
+};
+// game instruction's alert
+document.querySelector(".menu").addEventListener('click',message)
+function message() {
+    alert("welcome to the Etch A Sketch game , it's so simple, hover on the  boxes,  colors will change from white to black.")
+}
+    
