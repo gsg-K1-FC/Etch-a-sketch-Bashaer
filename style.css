@@ -18,25 +18,24 @@ height: 15vh;
     font-size: 27px;
     font-family: 'Grandstander', cursive; 
     padding: 28px;  
-    margin-left: 220px;
-    
+    margin-left: 80px;   
 }
 .menu {
     font-size: 45px;
     padding:25px;
 }
 span {
-    font-size:35px;
+    font-size:25px;
     font-family: 'Grandstander', cursive;
-    margin-right: 100px;
+    margin-right: 200px;
 }
 .grid-item {
     background-color: #ffffff;
+    outline: 1px solid rosybrown;
 }
 #container {
     display: grid;
     margin-top: 20px;
-    border: 10px solid rgb(255,182,193);
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 600px;
@@ -45,7 +44,7 @@ span {
 .wrapper{
     display:flex;
     justify-content: space-around;
-     margin-left: 200px
+    padding:10px;
 }
 /* buttons  */
 .reset-btn {
@@ -80,5 +79,6 @@ span {
 }
 .buttons {
     padding: 20px;
+    margin-left: 50px;
 }
 

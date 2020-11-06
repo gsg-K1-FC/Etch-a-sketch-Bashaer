@@ -1,6 +1,7 @@
 //append divs to the main div in html
 let container = document.getElementById("container");
 // create main 16*16 div
+
 function generateGrid(pixles)
 { 
     container.style.setProperty('--grid-rows', pixles);
@@ -23,20 +24,30 @@ function clearGrid() {
   document.querySelector(".reset-btn").addEventListener('click', clearGrid);
 
 // New grid button
+
 document.querySelector(".grid-btn").addEventListener("click",newGrid)
 function newGrid() {
-       
-        let differentGridSize = prompt("Enter a new grid size(1-100):");
+        let differentGridSize = prompt("Enter a single value for the grid's size between (1-100), for example 10 will give you a 10x10 matrix" );
         if (differentGridSize >= 1 && differentGridSize <= 100) {
-            generateGrid(differentGridSize);
+            
+            generateGrid(differentGridSize) ;
             clearGrid(differentGridSize)
-        } else {
-        alert("please enter a size  within 1-100 pixles")  
+        }  
+        else if ( differentGridSize > 100) {
+            alert("please enter a size within 1-100 ")
         }
+        else if  (isNaN (differentGridSize)) {
+            alert("Invalid border size .");
+        }
+        else {
+            clearGrid();
+        }
+    
+      
 };
 // game instruction's alert
 document.querySelector(".menu").addEventListener('click',message)
 function message() {
-    alert("welcome to the Etch A Sketch game , it's so simple, hover on the  boxes,  colors will change from white to black.")
+    alert("welcome to the Etch A Sketch game !, it's so simple, hover on the  boxes,  colors will change from white to black" )
 }
-    
+
