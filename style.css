@@ -3,10 +3,10 @@
     margin:0;
     box-sizing: border-box;
 }
+/* organizing the main structure */
 body {
     background-color: #008080;
 }
-/* organizing the main structure */
 header {
 position: relative;
 display: flex;
@@ -40,6 +40,7 @@ span {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 600px;
     height: 550px;
+    border: 4px solid black;
 }
 .wrapper{
     display:flex;
@@ -47,6 +48,10 @@ span {
     padding:10px;
 }
 /* buttons  */
+.buttons {
+    padding: 20px;
+    margin-left: 50px;
+}
 .reset-btn {
     border: none;
     outline: none;
@@ -108,8 +113,4 @@ h1 {
     background-color: black;
     color: white;
     border-radius:50px;
-}
-.buttons {
-    padding: 20px;
-    margin-left: 50px;
 }

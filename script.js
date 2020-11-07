@@ -61,6 +61,7 @@ function generateColor() {
 // return to the default color which is black
 document.querySelector(".black-btn").addEventListener("click", returnBlack)
 function returnBlack() {
+    
     document.querySelectorAll(".grid-item").forEach(item => {
         item.addEventListener('mouseover', () => { item.style.backgroundColor = 'black'; });
     })
