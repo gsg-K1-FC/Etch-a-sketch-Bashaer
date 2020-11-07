@@ -36,7 +36,7 @@ function newGrid() {
         else if ( differentGridSize > 100) {
             alert("please enter a size within 1-100 ")
         }
-        else if  (isNaN (differentGridSize)) {
+        else if  (isNaN (differentGridSize) || differentGridSize.trim()==="") {
             alert("Invalid border size .");
         }
         else {
