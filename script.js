@@ -48,6 +48,20 @@ function newGrid() {
 // game instruction's alert
 document.querySelector(".menu").addEventListener('click',message)
 function message() {
-    alert("welcome to the Etch A Sketch game !, it's so simple, hover on the  boxes,  colors will change from white to black" )
+    alert("welcome to the Etch A Sketch game ! It's so simple, hover on the  boxes,  colors will change from white to black (defult color), you can pick another color by clickng the (A random Color)button")
 }
-
+// generate random color
+document.querySelector(".random-btn").addEventListener("click",generateColor) 
+function generateColor() {
+    let randomColor = Math.floor(Math.random() * 16777216).toString(16);
+    document.querySelectorAll(".grid-item").forEach(item => {
+        item.addEventListener('mouseover', () => { item.style.backgroundColor = `#${randomColor}`});
+    })
+}
+// return to the default color which is black
+document.querySelector(".black-btn").addEventListener("click", returnBlack)
+function returnBlack() {
+    document.querySelectorAll(".grid-item").forEach(item => {
+        item.addEventListener('mouseover', () => { item.style.backgroundColor = 'black'; });
+    })
+}

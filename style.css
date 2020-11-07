@@ -61,12 +61,33 @@ span {
     height:80px;
     outline:none;
 }
+.random-btn {
+    border: none;
+    border-radius: 30px;
+    width:200px;
+    height:80px;
+    outline:none;
+}
+.black-btn {
+    border: none;
+    border-radius: 30px;
+    width:200px;
+    height:80px;
+    outline:none;
+}
 .grid-btn h1 {
     font-family:'Grandstander', cursive;  ;
 }
 .reset-btn h1 {
     font-family : 'Grandstander', cursive; 
-    
+}
+.random-btn h1 {
+    font-family : 'Grandstander', cursive;
+    font-weight: 900;
+}
+.black-btn h1 {
+    font-family : 'Grandstander', cursive;    
+   
 }
 .reset-btn:hover
   {
@@ -77,8 +98,18 @@ span {
     border : 4px solid  yellowgreen ;
     background-color: rgb(255,192,203);
 }
+.random-btn:hover {
+    background-image: url("../colors.png") ;
+    border : 4px solid black;
+}
+.black-btn:hover
+h1 {
+    border : 6px solid white;
+    background-color: black;
+    color: white;
+    border-radius:50px;
+}
 .buttons {
     padding: 20px;
     margin-left: 50px;
 }
-
