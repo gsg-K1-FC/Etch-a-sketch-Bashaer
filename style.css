@@ -3,10 +3,10 @@
     margin:0;
     box-sizing: border-box;
 }
+/* organizing the main structure */
 body {
     background-color: #008080;
 }
-/* organizing the main structure */
 header {
 position: relative;
 display: flex;
@@ -23,6 +23,7 @@ height: 15vh;
 .menu {
     font-size: 45px;
     padding:25px;
+    cursor: pointer;
 }
 span {
     font-size:25px;
@@ -40,6 +41,7 @@ span {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     width: 600px;
     height: 550px;
+    border: 4px solid black;
 }
 .wrapper{
     display:flex;
@@ -47,26 +49,55 @@ span {
     padding:10px;
 }
 /* buttons  */
+.buttons {
+    padding: 20px;
+    margin-left: 50px;
+}
 .reset-btn {
     border: none;
-    outline: none;
+    outline:transparent;
     border-radius: 30px;
     width: 200px;
     height:80px;
+    cursor: pointer;
 }
 .grid-btn {
     border: none;
     border-radius: 30px;
     width:200px;
     height:80px;
-    outline:none;
+    outline:transparent;
+    cursor: pointer;
+}
+.random-btn {
+    border: none;
+    border-radius: 30px;
+    width:200px;
+    height:80px;
+    outline:transparent;
+    cursor: pointer;
+}
+.black-btn {
+    border: none;
+    border-radius: 30px;
+    width:200px;
+    height:80px;
+    outline:transparent;
+    cursor: pointer;
 }
 .grid-btn h1 {
     font-family:'Grandstander', cursive;  ;
 }
 .reset-btn h1 {
     font-family : 'Grandstander', cursive; 
-    
+}
+.random-btn h1 {
+    font-family : 'Grandstander', cursive;
+    font-weight: 900;
+}
+.black-btn h1 {
+    font-family : 'Grandstander', cursive;    
+   
 }
 .reset-btn:hover
   {
@@ -77,8 +108,12 @@ span {
     border : 4px solid  yellowgreen ;
     background-color: rgb(255,192,203);
 }
-.buttons {
-    padding: 20px;
-    margin-left: 50px;
+.random-btn:hover {
+    background-image: url("../colors.png") ;
+    border : 4px solid black;
 }
-
+.black-btn:hover {
+    background-color: black;
+    color: white;
+    border-radius:50px;
+}
