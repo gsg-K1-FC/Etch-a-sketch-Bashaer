@@ -43,7 +43,6 @@ function newGrid() {
             clearGrid();
         }
     
-      
 };
 // game instruction's alert
 document.querySelector(".menu").addEventListener('click',message)

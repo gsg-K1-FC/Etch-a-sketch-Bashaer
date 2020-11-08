@@ -55,7 +55,7 @@ span {
 }
 .reset-btn {
     border: none;
-    outline: none;
+    outline:transparent;
     border-radius: 30px;
     width: 200px;
     height:80px;
@@ -66,7 +66,7 @@ span {
     border-radius: 30px;
     width:200px;
     height:80px;
-    outline:none;
+    outline:transparent;
     cursor: pointer;
 }
 .random-btn {
@@ -74,7 +74,7 @@ span {
     border-radius: 30px;
     width:200px;
     height:80px;
-    outline:none;
+    outline:transparent;
     cursor: pointer;
 }
 .black-btn {
@@ -82,7 +82,7 @@ span {
     border-radius: 30px;
     width:200px;
     height:80px;
-    outline:none;
+    outline:transparent;
     cursor: pointer;
 }
 .grid-btn h1 {
