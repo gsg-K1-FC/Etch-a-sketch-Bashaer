@@ -48,7 +48,7 @@ function newGrid() {
 // game instruction's alert
 document.querySelector(".menu").addEventListener('click',message)
 function message() {
-    alert("welcome to the Etch A Sketch game ! It's so simple, hover on the  boxes,  colors will change from white to black (defult color), you can pick another color by clickng the (A random Color)button")
+    alert("welcome to Etch A Sketch game ! It's so simple, hover on the  boxes,  colors will change from white to black (defult color), you can also click on (a random color) button, and a random color will appear each time")
 }
 // generate random color
 document.querySelector(".random-btn").addEventListener("click",generateColor) 
