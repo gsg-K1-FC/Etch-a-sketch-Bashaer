@@ -28,4 +28,7 @@
 After learning  about JavaScript  & DOM with amazing mentors at *GAZA SKY GEEKS* :tada: , it's time to apply those skills.
 ![123439261_649010015767774_3742311156556473754_n](https://user-images.githubusercontent.com/70339752/98028012-28f21680-1e16-11eb-9235-7601bbcf4f57.jpg)
 
+## You can see the final result by clicking on this link 
+https://gsg-k1-fc.github.io/Etch-a-sketch-Bashaer/
+
 
