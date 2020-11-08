@@ -12,23 +12,25 @@ position: relative;
 display: flex;
 justify-content: space-around;
 background-color: rgb(255,182,193);
-height: 15vh;
+height: 100px;
+width: 100vw;
 }
 .logo {
     font-size: 27px;
     font-family: 'Grandstander', cursive; 
     padding: 28px;  
-    margin-left: 80px;   
+    margin-left: 80px; 
+    width: 50%;  
 }
 .menu {
     font-size: 45px;
-    padding:25px;
     cursor: pointer;
+    padding-top: 28px;
 }
-span {
+ span {
     font-size:25px;
     font-family: 'Grandstander', cursive;
-    margin-right: 200px;
+    width:50%;
 }
 .grid-item {
     background-color: #ffffff;
@@ -47,57 +49,25 @@ span {
     display:flex;
     justify-content: space-around;
     padding:10px;
+    width: 100%;
 }
 /* buttons  */
 .buttons {
-    padding: 20px;
-    margin-left: 50px;
+    padding: 0px 80px;
 }
-.reset-btn {
-    border: none;
-    outline:transparent;
-    border-radius: 30px;
-    width: 200px;
-    height:80px;
-    cursor: pointer;
-}
-.grid-btn {
+.buttons button {
     border: none;
     border-radius: 30px;
     width:200px;
     height:80px;
     outline:transparent;
     cursor: pointer;
+    margin: 20px 20px;
+    padding: 0 5px;
+    display: block;
 }
-.random-btn {
-    border: none;
-    border-radius: 30px;
-    width:200px;
-    height:80px;
-    outline:transparent;
-    cursor: pointer;
-}
-.black-btn {
-    border: none;
-    border-radius: 30px;
-    width:200px;
-    height:80px;
-    outline:transparent;
-    cursor: pointer;
-}
-.grid-btn h1 {
-    font-family:'Grandstander', cursive;  ;
-}
-.reset-btn h1 {
-    font-family : 'Grandstander', cursive; 
-}
-.random-btn h1 {
-    font-family : 'Grandstander', cursive;
-    font-weight: 900;
-}
-.black-btn h1 {
-    font-family : 'Grandstander', cursive;    
-   
+.buttons button h1 {
+    font-family : 'Grandstander', cursive;  
 }
 .reset-btn:hover
   {
@@ -117,89 +87,36 @@ span {
     color: white;
     border-radius:50px;
 }
-
 /* Responsive design */
-@media (min-width: 730px) and (max-width:1200px) {
+@media (min-width: 730px) and (max-width:1010px) {
     .logo {
         font-size: 18px;
-        padding-left: 190px;
     }
     .menu {
         font-size : 30px;
-        padding-top: 30px;
-        padding-left: 250px;
         font-weight: bolder;
     }
-    header {
-        width: 1090px;
-    }
-    .wrapper{
-        width:1000px; 
+    .buttons {
+        padding: 0 40px;
     }
 }
 @media (min-width: 480px) and (max-width:729px) {
     .logo {
-        font-size : 40px;
-        padding-top: 90px;
-    }
-    header {
-        width: 2000px;
-        height: 30vh;
+        font-size : 15px;
     }
     .menu {
-        padding-top: 70px;
         font-weight: bolder;
-        padding-left: 500px;
-        font-size: 50px;
-    }
-    span {
-        font-size: 50px;
-    }
-    .wrapper
-     {
-        width: 2000px;
-        height: 2000px;
-    }
-    .reset-btn {
-        width: 400px;
-        height: 200px;
-    }
-    .grid-btn {
-        width: 400px;
-        height: 200px;
-    }
-    .random-btn {
-        width: 400px;
-        height: 200px;
-    }
-    .black-btn {
-        width: 400px;
-        height: 200px;
-    }
-    .reset-btn h1 {
-        font-size: 80px;
-        font-weight: bolder;
-    }
-    .grid-btn {
-        font-size: 40px;
-    }
-    .random-btn h1 {
-        font-size: 80px;
-    }
-    .black-btn h1 {
-        font-size : 80px;
+        font-size: 25px;
     }
     .wrapper {
         padding-top: 50px;
     }
-
-    #container {
-        width: 2000px;
-        height: 1800px;
-
-    }
     .buttons {
     padding: 20px;
+    }
+    .buttons button {
+        width : 70%;
+        font-size: 10px;
     }
 }
 @media (max-width: 479px) {
@@ -208,42 +125,27 @@ span {
     }
     .buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap ;
+        padding: 0 20px;
     }
-    header {
-        width: 1000px;
-    }
-   #container {
-       width: 1000px;
-       height: 900px;
-   }
    .logo {
-       font-size: 20px;
-       padding-top: 30px;
+       font-size: 15px;
+       padding-top: 20px;
    }
    .menu {
        padding-top: 20px;
-       padding-left: 200px;
+       font-size:25px;
    }
    .menu span {
-       font-size: 30px;
+       font-size: 15px;
+   }  
+   #container {
+       width: 100%;
    }
-   .reset-btn {
-       height: 150px;
-       width: 200px;
-       border : 2px solid black;
-   }
-   .grid-btn {
-    height: 150px;
-    border : 2px solid black;
-   }
-   .random-btn {
-    height: 150px;
-    border : 2px solid black;
-   }
-   .black-btn {
-    height: 150px;
-    border : 2px solid black;
-   }
-   
+   .buttons button {
+    width : 30%;
+    font-size: 10px;
+    margin: 1% 3%;
+}
 }
